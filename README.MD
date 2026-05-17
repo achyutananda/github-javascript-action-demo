@@ -1,6 +1,6 @@
 # Hello world JavaScript action
 
-This action prints input passed to the actions
+This action prints input passed to the actions and set the output time of execution
 
 ## Inputs
 
