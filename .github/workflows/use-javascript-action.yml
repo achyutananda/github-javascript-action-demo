@@ -15,6 +15,6 @@ jobs:
         id: step_id
         uses: achyutananda/github-javascript-action-demo@main
         with:
-          input1:"${{inputs.input1}}"
+          input1:"AbC"
       - name: Print output
         run: echo "time of excution of action ${{steps.step_id.outputs.time}}"
