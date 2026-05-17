@@ -1,0 +1,20 @@
+name: Use Javascript action
+on: 
+  workflow_dispatch:
+    inputs:
+      input1:
+        type: string
+        required: true
+        default: ABC123
+jobs:
+  job1:
+    name: Take input and print current time from output
+    runs-on: ubuntu-latest
+    steps:
+      - name: Take input
+        id: step_id
+        uses: achyutananda/github-javascript-action-demo@main
+        with:
+          input1:${{inputs.input1}}
+      - name: Print output
+        run: echo "time of excution of action ${{steps.step_id.outputs.time}}"
