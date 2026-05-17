@@ -1,0 +1,13 @@
+name: Javascript action demo
+description: Javascript actions to demostrate inputs and output simple
+inputs:
+  input1:
+    default: World
+    description: Input for the action
+    required: true
+outputs:
+  time:
+    description: Output from the action
+runs:
+  using: node20
+  main: dist/index.js
