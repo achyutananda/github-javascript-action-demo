@@ -5,7 +5,7 @@ on:
       input1:
         type: string
         required: true
-        default: ABC123
+        default: "ABC 123"
 jobs:
   job1:
     name: Take input and print current time from output
